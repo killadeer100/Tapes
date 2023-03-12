@@ -50,7 +50,7 @@ local function playAudio(inSong)
 		os.pullEvent()
 
 		local buffer = decoder(chunk)
-		while not speaker.playAudio(buffer) do
+		while not speaker.playAudio(buffer, 0.15) do
 			os.pullEvent("speaker_audio_empty")
 		end
 	end
