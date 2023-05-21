@@ -35,6 +35,11 @@ while true do
 	end
 
 	print("Playing " .. file)
+	
+	repeat
+		os.queueEvent("fakeEvent")
+		os.pullEvent()
+	until ((os.time()*1000) % 500) == 0
 
 	local decoder = require "cc.audio.dfpwm".make_decoder()
 	while true do
@@ -48,7 +53,7 @@ while true do
 		os.pullEvent()
 
 		local buffer = decoder(chunk)
-		while not speaker.playAudio(buffer) do
+		while not speaker.playAudio(buffer, 0.50) do
 			os.pullEvent("speaker_audio_empty")
 		end
 	end
