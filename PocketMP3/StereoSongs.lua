@@ -9,5 +9,7 @@ songTbl["RickLeft"] = "https://github.com/killadeer100/Tapes/raw/Tapes/Rick%20Ro
 songTbl["RickRight"] = "https://github.com/killadeer100/Tapes/raw/Tapes/Rick%20Roll%208-bit%20-%20Right.dfpwm"
 songTbl["HoshinoLeft"] = "https://github.com/killadeer100/Tapes/raw/Tapes/Hoshino%20Kieta%20Yoruni%20-%20Left.dfpwm"
 songTbl["HoshinoRight"] = "https://github.com/killadeer100/Tapes/raw/Tapes/Hoshino%20Kieta%20Yoruni%20-%20Right.dfpwm"
+songTbl["WarningLeft"] = "https://github.com/killadeer100/Tapes/raw/Tapes/Warning%20Call%20-%20Left.dfpwm"
+songTbl["WarningRight"] = "https://github.com/killadeer100/Tapes/raw/Tapes/Warning%20Call%20-%20Right.dfpwm"
 
 return { songTbl = songTbl }
